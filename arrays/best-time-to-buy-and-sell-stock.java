@@ -1,8 +1,7 @@
 class Solution {
     public int maxProfit(int[] prices) {
         int maxProfit =0;
-        
-        if(prices.length <2)
+        if(prices.length <2) //check edge case input
             return maxProfit;
         int minPrice=prices[0];
         for(int i=1;i<prices.length;i++) {
