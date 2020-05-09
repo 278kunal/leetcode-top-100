@@ -9,7 +9,7 @@ namespace LeetCode_Arrays
 {
     class ProductArrayExceptSelf
     {
-        public static int[] ProductExceptSelf(int[] nums)
+        public int[] ProductExceptSelf(int[] nums)
         {
             //Edge case
             if (nums.Length <= 2)
@@ -38,10 +38,6 @@ namespace LeetCode_Arrays
                 r = r * nums[i];
             }
             return result;
-        }
-        public static void Main()
-        {
-            ProductExceptSelf(new int[] { 1,2,3,4});
         }
     }
 }
